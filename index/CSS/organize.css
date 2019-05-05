@@ -1,0 +1,23 @@
+body {
+	margin: 0px;
+}
+.img-container {
+	height: 100vh;
+	background-image: url("../Images/splash-rari.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px;
+}
+
+.title-text {
+	padding-left: 5%;
+	padding-right: 5%;
+	position: absolute;
+	color: #931415;
+	font-size: 100px;
+	background-color: rgba(255, 255, 255, 0.8);
+	left: 40%;
+	top: 20%;
+	border-radius: 10px;
+}
