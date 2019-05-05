@@ -1,23 +1,113 @@
-body {
-	margin: 0px;
-}
-.img-container {
+.title-container {
+	background-color: black;
 	height: 100vh;
-	background-image: url("../Images/splash-rari.jpg");
-	background-position: center center;
+}
+
+.secondary-container {
+	background-color: white;
+	height: 70vh;
+}
+
+.third-container {
+	height: 25vh;
+	background-color: black;
+	width: 100%;
+}
+
+.fourth-container {
+	height: 70vh;
+	background-image: url(../Images/prototype.png);
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-attachment: fixed;
+	background-size: 50%;
+}
+
+.v1-container {
+	height: 70vh;
+	background-image: url(../Images/rari-1.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 70%;
+	background-color: black;
+}
+
+.heading {
+	margin-top: 0px;
+	padding-top: 30vh;
+	font-size: 300px;
+	color: white;
+	padding-left: 1%;
+}
+
+.below-prototype-container {
+	height: 25vh;
+	background-color: #B2001C;
+}
+
+.description-img {
+	display: block;
+	margin: 0px auto;
+	padding-top: 10vh;
+	height: 50vh;
+}
+
+.prototype-img {
+	padding-top: 17vh;
+	width: 100vw;
+}
+
+.description-3 {
+	margin-top: 0px;
+	color: white;
+	text-align: center;
+	padding-top: 12vh;
+}
+
+
+.black-font {
+	color: black;
+	font-size: 50px;
+	margin-top: 17vh;
+}
+
+@media only screen and (max-width: 750px) {
+	.heading {
+  		font-size: 200px;
+	}
+}
+
+@media only screen and (max-width: 511px) {
+	.heading {
+  		font-size: 100px;
+	}
+	.title-container {
+		max-height: 700px
+	}
+	.secondary-container {
+		max-height: 700px;
+	}
+}
+
+.title-font {
+	font-family: 'Source Code Pro', monospace;
+}
+
+.body-padding {
 	margin: 0px;
 }
 
-.title-text {
-	padding-left: 5%;
-	padding-right: 5%;
-	position: absolute;
-	color: #931415;
-	font-size: 100px;
-	background-color: rgba(255, 255, 255, 0.8);
-	left: 40%;
-	top: 20%;
-	border-radius: 10px;
+a:link {
+	color: red;
+	border-bottom: 1px solid red;
+}
+	a:visited {
+	color: red;
+	border-bottom: 1px solid red;
+}
+
+a:hover {
+	color: red	;
+	border-bottom: 1px solid red;
 }

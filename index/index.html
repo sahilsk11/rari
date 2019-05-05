@@ -1,47 +1,74 @@
-<head>
-	<title>Rari</title>
-	<link href="CSS/organize.css" rel="stylesheet">
-	<link href="Images/icon.png" rel="icon">
-</head>
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<title>Rari</title>
 
-<body lang="en">
-	<div class="img-container">
-		<div class="hello-text">
-			<h1 class="text-center title-text">'Rari<h1>
-		</div>
-	</div>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<div class="container-fluid">
-		<h3 id="background"> HOW RARI CAME TO LIFE</h3>
-		<p class="lead">
-			"That one."<br><br>
-			I pointed my finger at the beautiful red car 3 rows above the bazaar owner's head. 800 Indian rupees later, a happy 8-year-old was going home with a brand new remote-controlled ferrari car.
+		<link href="CSS/organize.css" rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
-			<br><br>
-			For the whole two weeks the car worked, it was pure magic. It was zippy, had dazzling lights, and the bright red never failed to turn heads as it drifted by. But like most toys bought off the streets of India, it stopped working.
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			//smooth scroll
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
 
-			<br><br>
-			Until my freshman year of high school, the car sat in the garage eating dust. But by this time, I had a renewed interest in cars, and decided to start a project to restore my favorite childhood vehicles. "Rari" (short for Ferrari) started then. I started by disassembling the exterior, and replaced the motor system and inspecting the dusty computing chip. A few blotchy solders later, and Rari was back drifitng over the pavement, kicking rocks as the plastic wheels glided over pavement.
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
 
-			<br><br>
-			For a few more years, the car resumed its place as a dust collector. But during the summer after high school, autonomous vehicles had become increasingly prominent and the underlying technology was easily available. Wanting to explore the field further, I brought Rari out and decided to completely change the car.
+			      // Store hash
+			      var hash = this.hash;
 
-		</p>
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
+		</script>
+		<link href="Images/icon.png" rel="icon">
+	</head>
 
-		<h3>UNDER THE HOOD</h3>
-		<p clas="lead">
-			Rari is controlled using a Raspberry Pi connected with a motor chip for steering and drivetrain. Additionally, the Pi is connected to a 5MP camera that is used for deep-learning lane and object recognition and an ultrasonic sensor as an emergency braking system.
-		</p>
+	<body class="body-padding">
+		<a class='nav-box' href='#r'>
+			<section class="title-container">
+				<h1 class='heading title-font'>rari</h1>
+			</section>
+		</a>
 
-		<h3>WHAT'S NEXT</h3>
-		<p class="lead">
-			As a toy-grade vehicle that is almost 10 years old, the chassis isn't optimized for autonomous vehicle movement. Some issues include wobbly wheels, weak motor, and inconsistent steering rack.
+		<section class="secondary-container" id='r'>
+			<img src="Images/description.png" class="description-img">
+		</section>
 
-			<br><br>
-			After the image recognition node is implemented, I plan on 3D printing a new chassis which would allow for better stability. Additionally, I plan to replace the motor with a newer system, and to change the steering method to be a servo, like in hobby-grade RC cars.
+		<section class="third-container">
+				<h1 class='description-3 title-font'>it's a built on top of refurbished RC cars ...</h1>
+		</section>
 
-			<br><br>
-			Finally, I want to add ultrasonic sensors in the rear and cameras mounted on the sides with the possibility of adding self-parking capabilities, and perhaps even lane changes.
-		</p>
-	</div>
-</body>
+		<section class="fourth-container">
+			
+		</section>
+
+		<section class="below-prototype-container">
+			<h1 class='description-3 title-font'>... using only an ultrasonic sensor and camera</h1>
+		</section>
+
+		<section class="v1-container">
+			
+		</section>
+
+		<section class="secondary-container">
+			<h1 class='description-3 title-font black-font'>Stay tuned for more.</h1>
+		</section>
+		
+	</body>
+</html>
