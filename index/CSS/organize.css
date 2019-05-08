@@ -1,20 +1,22 @@
+/*sections*/
+
 .title-container {
 	background-color: black;
 	height: 100vh;
 }
 
-.secondary-container {
+.description-section {
 	background-color: white;
 	height: 70vh;
 }
 
-.third-container {
+.intro-prototype-section {
 	height: 25vh;
 	background-color: black;
 	width: 100%;
 }
 
-.fourth-container {
+.prototype-section {
 	height: 70vh;
 	background-image: url(../Images/prototype.png);
 	background-position: center;
@@ -23,8 +25,8 @@
 	background-size: 50%;
 }
 
-.v1-container {
-	height: 70vh;
+.v1-section {
+	height: 80vh;
 	background-image: url(../Images/rari-1.png);
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -33,36 +35,65 @@
 	background-color: black;
 }
 
-.heading {
-	margin-top: 0px;
-	padding-top: 30vh;
-	font-size: 300px;
-	color: white;
-	padding-left: 1%;
-}
-
-.below-prototype-container {
+.intro-v1-section {
 	height: 25vh;
 	background-color: #B2001C;
 }
 
-.description-img {
-	display: block;
-	margin: 0px auto;
-	padding-top: 10vh;
-	height: 50vh;
+.conclusion-section {
+	height: 70vh;
 }
 
-.prototype-img {
-	padding-top: 17vh;
-	width: 100vw;
+.stay-in-touch {
+	position: relative;
+	background-color: #1A1E22;
+	height: 60vh;
+}
+
+/*sub components of sections*/
+
+.heading {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 45vh;
+	padding-left: 2vw;
+	font-size: 300px;
+	color: white;
+	letter-spacing: 10px;
+}
+
+.underline {
+	text-decoration: underline;
+	text-decoration-color: red;
 }
 
 .description-3 {
 	margin-top: 0px;
 	color: white;
 	text-align: center;
-	padding-top: 12vh;
+	padding-top: 75px;
+	font-size: 40px;
+}
+
+.description-title {
+	font-size: 10vh;
+	margin: 0;
+}
+
+.description-container {
+	padding-top: 23vh;
+	margin: 0px auto;
+	display: block;
+	text-align: center;
+	max-width: 800px;
+}
+
+.description-font {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4vh;
+	margin: 0px;
 }
 
 
@@ -70,6 +101,15 @@
 	color: black;
 	font-size: 50px;
 	margin-top: 17vh;
+}
+
+.white {
+	color: white;
+	left: 2vw;
+	position: absolute;
+	bottom: 5vh;
+	letter-spacing: 1px;
+	font-size: 20px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -91,23 +131,71 @@
 }
 
 .title-font {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Oleo Script';
+	font-style: normal;
+	font-weight: normal;
+}
+
+.customized-title {
+	text-align: center;
+}
+
+.customized-container {
+	margin: 0px auto;
+	max-width: 1000px;
+}
+
+.customized-obj {
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.customized-description {
+	font-size: 30px;
+	position: absolute;
+	left: 560px;
+	top: 35%;
+}
+
+.customized-img {
+	max-width: 400px;
+	padding-left: 30px;	
+}
+
+.stay-font {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
 }
 
 .body-padding {
 	margin: 0px;
 }
 
-a:link {
-	color: red;
-	border-bottom: 1px solid red;
-}
-	a:visited {
-	color: red;
-	border-bottom: 1px solid red;
+.git {
+	padding-top: 50px;
+	display: block;
+	margin: 0px auto;
+	width: 100px;
 }
 
-a:hover {
-	color: red	;
-	border-bottom: 1px solid red;
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	background-color: black;
+	width: 100%;
+}
+
+.footer-text {
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
 }
