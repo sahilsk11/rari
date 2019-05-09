@@ -15,7 +15,6 @@ while True:
             movement = 0
         else:
             movement = 1
-
         if movement == 1:
             print("moving forward")
         else:

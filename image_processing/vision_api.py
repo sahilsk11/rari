@@ -60,6 +60,6 @@ def is_stop_sign(file_path, num_responses=10):
 
 if __name__ == "__main__":
     start = timeit.default_timer()
-    print(is_stop_sign("stopsign.txt"))
+    print(is_stop_sign("../images/stopsign.txt"))
     end = timeit.default_timer()
     print("Time elapsed: " + str(round((end - start) * 1000)) + " ms")
