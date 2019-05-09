@@ -1,5 +1,4 @@
 import requests
-import pprint
 
 # the top secret key. This is a unique identifier that tells Google who is accessing the API
 key = "AIzaSyAYhg5B10ji-Dv0FglIg-Xx3LDx8pOyoRk"
@@ -28,7 +27,7 @@ payload = {
             "features": [
                 {
                     "type": "LABEL_DETECTION",
-                    "maxResults": 2 # returns the 10 best labels for the images
+                    "maxResults": 2  # returns the 10 best labels for the images
                 }
             ]
         }
