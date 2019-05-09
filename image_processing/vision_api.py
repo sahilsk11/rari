@@ -1,5 +1,5 @@
 import requests
-import datetime
+import timeit
 import base64
 
 #class variables
@@ -50,16 +50,16 @@ def parse_labels(json_response):
 
 
 def is_stop_sign(file_path, num_responses=10):
-    start = datetime.datetime.now()
     response = post_image(file_path, num_responses)
     labels = parse_labels(response)
     found = False
     for tag in labels:
         if tag.lower() == "stop sign":
             found = True
-    end = datetime.datetime.now()
-    print("Time elapsed: " + str((start - end).microseconds / 1000) + " ms")
     return found
 
 if __name__ == "__main__":
+    start = timeit.default_timer()
     print(is_stop_sign("stopsign.txt"))
+    end = timeit.default_timer()
+    print("Time elapsed: " + str(round((end - start) * 1000)) + " ms")

@@ -3,6 +3,7 @@
 .title-container {
 	background-color: black;
 	height: 100vh;
+	position: relative;
 }
 
 .description-section {
@@ -28,7 +29,7 @@
 .v1-section {
 	height: 80vh;
 	background-image: url(../Images/rari-1.png);
-	background-position: center top;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 70%;
@@ -41,7 +42,7 @@
 }
 
 .conclusion-section {
-	height: 70vh;
+	min-height: 70vh;
 }
 
 .stay-in-touch {
@@ -65,6 +66,10 @@
 .underline {
 	text-decoration: underline;
 	text-decoration-color: red;
+}
+
+.heading-subtitle {
+	margin-top: 0px;
 }
 
 .description-3 {
@@ -112,24 +117,6 @@
 	font-size: 20px;
 }
 
-@media only screen and (max-width: 750px) {
-	.heading {
-  		font-size: 200px;
-	}
-}
-
-@media only screen and (max-width: 511px) {
-	.heading {
-  		font-size: 100px;
-	}
-	.title-container {
-		max-height: 700px
-	}
-	.secondary-container {
-		max-height: 700px;
-	}
-}
-
 .title-font {
 	font-family: 'Oleo Script';
 	font-style: normal;
@@ -151,15 +138,17 @@
 }
 
 .customized-description {
+	padding-top: 5%;
 	font-size: 30px;
-	position: absolute;
-	left: 560px;
-	top: 35%;
+	padding-left: 10%;
+	text-align: center;
 }
 
 .customized-img {
+	width: 100%;
 	max-width: 400px;
-	padding-left: 30px;	
+	margin: 0px auto;
+	display: block;
 }
 
 .stay-font {
@@ -198,4 +187,53 @@
 
 a {
 	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+	.heading {
+  		font-size: 200px;
+  		letter-spacing: 2px;
+  		padding-top: 55vh;
+	}
+	.prototype-section {
+		background-size: 70%;
+	}
+	.v1-section {
+		background-size: 90%;
+	}
+	.customized-description {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 511px) {
+	.heading {
+  		font-size: 100px;
+	}
+	.description-3 {
+		font-size: 30px;
+		padding-top: 9vh;
+	}
+	.prototype-section {
+		background-size: 90%;
+		height: 50vh;
+	}
+	.v1-section {
+		background-size: 110%;
+		height: 50vh;
+	}
+	.heading-subtitle {
+		display: none;
+	}
+	.title-container {
+		max-height: 700px
+	}
+	.secondary-container {
+		max-height: 700px;
+	}
+	.customized-description {
+		padding-top: 0px;
+		padding-left: 0px;
+	}
 }
