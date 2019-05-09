@@ -1,10 +1,13 @@
 import requests
+import pprint
 
 # the top secret key. This is a unique identifier that tells Google who is accessing the API
 key = "AIzaSyAYhg5B10ji-Dv0FglIg-Xx3LDx8pOyoRk"
 
+# Path to the llama image
+# bonus! it's a .txt! this is because the API wants encoded images. More on this later.
+image_path = "images/llama.txt"
 
-image_path = ""
 
 # the API wants the image to be encoded in a special format. This function converts your image to the special format.
 # Don't worry about this!
@@ -25,7 +28,7 @@ payload = {
             "features": [
                 {
                     "type": "LABEL_DETECTION",
-                    "maxResults": 10 # returns the 10 best labels for the images
+                    "maxResults": 2 # returns the 10 best labels for the images
                 }
             ]
         }
@@ -35,3 +38,6 @@ payload = {
 # sends the call to the API
 r = requests.post("https://vision.googleapis.com/v1/images:annotate?key=" + key, json=payload)
 
+response = r.json()
+
+print(response)

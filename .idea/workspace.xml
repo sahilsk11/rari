@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7bb30e8-9d06-4592-967c-7781690f3cf9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_modules/Stage 1/stage1final.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_modules/Stage 1/vision_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_modules/Stage 1/Stage1.md" beforeDir="false" afterPath="$PROJECT_DIR$/learning_modules/Stage 1/api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,12 +16,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Stage1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/Stage1.md">
+      <file leaf-file-name="vision_api.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_processing/vision_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="58" column="16" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="819">
-                <caret line="56" column="136" selection-start-line="56" selection-start-column="136" selection-end-line="56" selection-end-column="136" />
+              <first_editor relative-caret-position="483">
+                <caret line="32" column="133" lean-forward="true" selection-start-line="32" selection-start-column="133" selection-end-line="32" selection-end-column="133" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -29,31 +42,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stage1-part1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stage1final.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/stage1final.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="543">
+                <caret line="125" column="284" selection-start-line="125" selection-start-column="284" selection-end-line="125" selection-end-column="284" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stage1-part1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="esc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vehicle_control/esc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-end-line="9" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +94,11 @@
         <option value="$PROJECT_DIR$/image_processing/vision_api.py" />
         <option value="$PROJECT_DIR$/learning_modules/Stage1.md" />
         <option value="$PROJECT_DIR$/learning_modules/Stage 1/vision_api.py" />
+        <option value="$PROJECT_DIR$/learning_modules/Stage 1/images/stage1.md" />
+        <option value="$PROJECT_DIR$/learning_modules/Stage 1/Stage1.md" />
+        <option value="$PROJECT_DIR$/learning_modules/Stage 1/api.md" />
         <option value="$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py" />
+        <option value="$PROJECT_DIR$/learning_modules/Stage 1/stage1final.md" />
       </list>
     </option>
   </component>
@@ -123,6 +136,13 @@
               <item name="learning_modules" type="462c0819:PsiDirectoryNode" />
               <item name="Stage 1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rari" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rari" type="462c0819:PsiDirectoryNode" />
+              <item name="learning_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Stage 1" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -155,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.vision_api">
+  <component name="RunManager" selected="Python.stage1-part1">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="rari" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,6 +189,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="stage1-part1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="rari" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning_modules/Stage 1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,9 +252,11 @@
       <item itemvalue="Python.vision_api" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.stage1-part1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stage1-part1" />
         <item itemvalue="Python.vision_api" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
@@ -234,6 +274,14 @@
       <option name="presentableId" value="Default" />
       <updated>1556997810980</updated>
     </task>
+    <task id="LOCAL-00001" summary="Edited the initial code snippet">
+      <created>1557378842709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557378842709</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -243,7 +291,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25369978" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21917808" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14663143" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -261,6 +309,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Edited the initial code snippet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited the initial code snippet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/image_processing/vision_api.py">
@@ -300,7 +352,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/Stage1.md">
+    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -347,7 +399,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/Stage1.md">
+    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/api.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image_processing/vision_api.py">
@@ -441,15 +493,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_processing/vision_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="404">
+          <caret line="58" column="16" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="16" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/Stage1.md">
+    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/api.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
@@ -457,8 +509,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="819">
-            <caret line="56" column="136" selection-start-line="56" selection-start-column="136" selection-end-line="56" selection-end-column="136" />
+          <first_editor relative-caret-position="483">
+            <caret line="32" column="133" lean-forward="true" selection-start-line="32" selection-start-column="133" selection-end-line="32" selection-end-column="133" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -468,8 +520,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/stage1-part1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning_modules/Stage 1/stage1final.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="543">
+            <caret line="125" column="284" selection-start-line="125" selection-start-column="284" selection-end-line="125" selection-end-column="284" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
