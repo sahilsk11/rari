@@ -1,5 +1,8 @@
-import requests
 import timeit
+
+start = timeit.default_timer()
+
+import requests
 import base64
 
 #class variables
@@ -48,7 +51,6 @@ def parse_labels(json_response):
         print("Error: " + str(json_response))
         exit(0)
 
-
 def is_stop_sign(file_path, num_responses=10):
     response = post_image(file_path, num_responses)
     labels = parse_labels(response)
@@ -58,8 +60,7 @@ def is_stop_sign(file_path, num_responses=10):
             found = True
     return found
 
-if __name__ == "__main__":
-    start = timeit.default_timer()
-    print(is_stop_sign("../images/stopsign.txt"))
-    end = timeit.default_timer()
-    print("Time elapsed: " + str(round((end - start) * 1000)) + " ms")
+
+print(is_stop_sign("../images/stopsign.txt"))
+end = timeit.default_timer()
+print("Time elapsed: " + str(round((end - start) * 1000)) + " ms")

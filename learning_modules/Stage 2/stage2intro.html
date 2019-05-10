@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><link href="../organize.css" rel="stylesheet"><meta charset="utf-8"><title>Welcome to Stage 2!.md</title><style></style></head><body id="preview">
+<h1><a id="Welcome_to_Stage_2_0"></a>Welcome to Stage 2!</h1>
+<p>By now, you have a vehicle that moves until it sees an image of a stop sign, and automatically stops.</p>
+<h4><a id="However_as_you_have_probably_noticed_Its_slow_AF_4"></a>However, as you have probably noticed. It’s slow AF.</h4>
+<p>To be honest, I would be surprised in most cases if your car is able to stop before running into your stop sign.</p>
+<p>We’re going to fix that by exploring ways to streamline our algorithm.</p>
+<p>As you may recall, here is everything going on in real-time:</p>
+<ol>
+<li>The car takes an image as it moves (~3 sec)</li>
+<li>The image is encoded into a String (~0.2 sec)</li>
+<li>The new encoded image is uploaded to Google Vision API (~1 sec)</li>
+<li>All of the results are searched through to find matching objects (&lt; 1 sec)</li>
+<li>We call the <code>esc</code> library to stop the vehicle if a stop sign is found</li>
+</ol>
+<p>This process is extremely inefficient, and as you can see, is very slow. Let’s jump into streamlining this process.</p>
+<h2><a id="Next_Steps_20"></a>Next Steps</h2>
+<p>In Stage 2, we introduce machine learning principles that will run on the car itself.</p>
+<p>In our previous examples, we had to call Google’s API to recognize images. However, the process of sending requests over WiFi to another server is too time consuming to do efficiently in real-time. In the following modules, we are going to learn how to do image recognition locally and faster than the Google API.</p>
+<p>This project is about to get real. Strap in.</p>
+<p><img src="images/original.gif" alt="takeoff"></p>
+
+</body></html>
