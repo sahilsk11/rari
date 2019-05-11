@@ -1,7 +1,7 @@
 import requests
 
 # the top secret key. This is a unique identifier that tells Google who is accessing the API
-key = "AIzaSyAYhg5B10ji-Dv0FglIg-Xx3LDx8pOyoRk"
+key = ""
 
 # Path to the llama image
 # bonus! it's a .txt! this is because the API wants encoded images. More on this later.
