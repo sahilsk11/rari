@@ -6,7 +6,7 @@ execution_path = os.getcwd()
 print(execution_path)
 prediction = CustomImagePrediction()
 prediction.setModelTypeAsResNet()
-prediction.setModelPath(os.path.join(execution_path, "resnet50_weights_tf_dim_ordering_tf_kernels.h5"))
+prediction.setModelPath(os.path.join(execution_path, "model_ex-200_acc-0.833333.h5"))
 prediction.setJsonPath(os.path.join(execution_path, "model_class.json"))
 prediction.loadModel(num_objects=2)
 

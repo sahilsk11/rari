@@ -1,6 +1,5 @@
 import base64
 
-f = open("stopsign.png", "rb")
-image_content = f.read()
-str = str(base64.b64encode(image_content))
-print(str[2:])
+with open("stopsign.png", "rb") as image_file:
+    encoded_string = base64.b64encode(image_file.read())
+print(str(encoded_string)[2:-1])

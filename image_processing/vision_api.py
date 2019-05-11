@@ -1,17 +1,18 @@
 import timeit
-
 start = timeit.default_timer()
 
 import requests
 import base64
+import passwords
 
 #class variables
-key = "AIzaSyAYhg5B10ji-Dv0FglIg-Xx3LDx8pOyoRk"
+key = passwords.api_key()
 
 
 def encode_img(image_path):
-    f = open(image_path)
-    return f.read()
+    with open("stopsign.png", "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    return str(encoded_string)[2:-1]
 
 
 def post_image(image_path, num_results):
@@ -61,6 +62,6 @@ def is_stop_sign(file_path, num_responses=10):
     return found
 
 
-print(is_stop_sign("../images/stopsign.txt"))
+print(is_stop_sign("../images/stopsign.png"))
 end = timeit.default_timer()
 print("Time elapsed: " + str(round((end - start) * 1000)) + " ms")
