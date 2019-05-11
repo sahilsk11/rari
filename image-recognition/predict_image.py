@@ -1,13 +1,12 @@
 import timeit
 start = timeit.default_timer()
+
 from imageai.Prediction.Custom import CustomImagePrediction
-import os
-execution_path = os.getcwd()
-print(execution_path)
+
 prediction = CustomImagePrediction()
 prediction.setModelTypeAsResNet()
-prediction.setModelPath(os.path.join(execution_path, "models/model_ex-200_acc-0.833333.h5"))
-prediction.setJsonPath(os.path.join(execution_path, "models/model_class.json"))
+prediction.setModelPath("models/model_ex-400_acc-0.737778.h5")
+prediction.setJsonPath("models/model_class.json")
 prediction.loadModel(num_objects=2)
 
 

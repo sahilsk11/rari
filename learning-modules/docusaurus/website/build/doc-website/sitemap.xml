@@ -15,4 +15,5 @@
 <url> <loc>http://rari.projectcarbon.io./../../docs/doc5</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/doc5" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/stage1part1</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/stage1part1" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/stage2intro</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/stage2intro" /> </url>
+<url> <loc>http://rari.projectcarbon.io./../../docs/welcome</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/welcome" /> </url>
 </urlset>
