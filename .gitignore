@@ -1,1 +1,3 @@
-passwords.py
+*/passwords.py
+.*
+*/__pycache__
