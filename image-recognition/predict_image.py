@@ -6,12 +6,12 @@ execution_path = os.getcwd()
 print(execution_path)
 prediction = CustomImagePrediction()
 prediction.setModelTypeAsResNet()
-prediction.setModelPath(os.path.join(execution_path, "model_ex-200_acc-0.833333.h5"))
-prediction.setJsonPath(os.path.join(execution_path, "model_class.json"))
+prediction.setModelPath(os.path.join(execution_path, "models/model_ex-200_acc-0.833333.h5"))
+prediction.setJsonPath(os.path.join(execution_path, "models/model_class.json"))
 prediction.loadModel(num_objects=2)
 
 
-(predictions, percentage_probabilities) = prediction.predictImage("../images/stopsign.png", result_count=1)
+(predictions, percentage_probabilities) = prediction.predictImage("stopsign.png", result_count=1)
 
 print(predictions, " : ", percentage_probabilities)
 

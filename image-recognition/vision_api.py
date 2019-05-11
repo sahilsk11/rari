@@ -10,7 +10,7 @@ key = passwords.api_key()
 
 
 def encode_img(image_path):
-    with open("stopsign.png", "rb") as image_file:
+    with open(image_path, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
     return str(encoded_string)[2:-1]
 
@@ -52,6 +52,7 @@ def parse_labels(json_response):
         print("Error: " + str(json_response))
         exit(0)
 
+
 def is_stop_sign(file_path, num_responses=10):
     response = post_image(file_path, num_responses)
     labels = parse_labels(response)
@@ -62,6 +63,6 @@ def is_stop_sign(file_path, num_responses=10):
     return found
 
 
-print(is_stop_sign("../images/stopsign.png"))
+print(is_stop_sign("stopsign.png"))
 end = timeit.default_timer()
 print("Time elapsed: " + str(round((end - start) * 1000)) + " ms")
