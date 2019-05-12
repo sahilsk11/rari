@@ -22,7 +22,7 @@ class Footer extends React.Component {
   }
 
   render() {
-    return (
+    return "";/*(
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
           <a href={this.props.config.baseUrl} className="nav-home">
@@ -97,7 +97,7 @@ class Footer extends React.Component {
         </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
-    );
+    );*/
   }
 }
 

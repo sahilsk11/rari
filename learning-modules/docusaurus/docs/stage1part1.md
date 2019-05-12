@@ -1,34 +1,29 @@
-# Welcome to Stage 1
+---
+id: stage1part1
+title: Part 1 - Recognizing Llamas
+sidebar_label: Recognizing Llamas
+---
 
-This will be one of the easier modules of the project, hence it is first. Keep in mind that in this learning module, we will be prioritizing simplicity over efficiency! The program will be very slow and laggy, but establishing a strong understanding in this segment will help you a lot in future modules.
-Additionally, understanding REST APIs is an invaluable skill in your programming career. I can almost guarantee your first internship will involve them.
-
-### Background
-Using the newly attached camera on your car, you are now able to capture still images. Processing these images using our own algorithms as an extremely complex process involving machine learning that we will visit in future models.
-
-For now, we are going to hand off all our images to Google and have their algorithms parse our data and return what they find. All clear? Let's move on.
+## Background
+Using the newly attached camera on your car, you are now able to capture still images. Modern image recognition uses machine-learning to parse images, but it's too complicated to write these algorithms on our own yet. Instead, we're going to use a pre-made Google algorithm to parse the images for us.
 
 
-## Part 1: Parsing Llama Pics
+# Parsing Llama Pics
 
 ![Llama time](./../../img/doc-images/stage-1/llama.jpg)
 
 For this module, we're going to be working with our new friend, Ben.
 
-As we said earlier, image processing can get pretty complex and writing our own scripts to do so involved machine learning. For this introductory module, we are going to use the Google Vision API to parse our images and tell us what's in them.
-
-Once we do this, we can have our car analyze surroundings in real-time, and detect objects like stop signs or llamas on the road.
-
-This may all sound complicated, but this is where the magic of the Google Vision API will come into play. Let's jump in.
+The very first algorithms we will create will be to recognize whether a given image contains a llama or not. Once we do this, we can apply the same code to detect objects like stop signs!
 
 ## Step 0: What to Know
 
-There are some key components I am going to assume you're familar with:
-1. Using REST APIs
-2. JSON notation
+There are some key components I am going to assume you're familiar with:
+1. [Using REST APIs](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
+2. [JSON notation](https://www.w3schools.com/whatis/whatis_json.asp)
 3. The difference between a llama and a stop sign
 
-If any of these feel unfamiliar, I recommend going back and exploring some of the other topics I've published.
+If any of these feel unfamiliar, click on them to read more.
 
 ## Step 1: Sending Requests
 
@@ -44,7 +39,7 @@ Start with line 8. Here, we are specifying the path to the image we want our API
 
 Take a look at line 38:
 
-![Line 38](./../../img/doc-images/stage-1/38.png)
+`r = requests.post("https://vision.googleapis.com/v1/images:annotate?key=" + key, json=payload)`
 
 Look familiar?
 
@@ -104,23 +99,3 @@ for tag in labels:
         print("We found Ben")
 ```
 
-## Step 3: Recognizing Stop Signs
-Now that we have written a script to use the Google Vision API to parse an image and determine what it's contents are, we can extend this code to recogize any object we want!
-
-Since we don't care about llamas anymore let's adapt the code to parse an image of a stop sign.
-
-Change line 9 to:
-
-`image_path = "images/stopsign.txt"`
-
-This will now upload a picture of a stop sign.
-
-### To-Do: Modify the code to find a stop sign instead of a llama
-hint: when searching in your labels array, change the word "llama" to "stop sign"
-
-### Solution
-Change the word "llama" to stop sign and change the print statement!
-
-* * *
-### Congratulations!
-If you did everything correctly, you have now successfully written and algorithm that can parse any image and check if the image contains an object. In our case, we are going to continue with the stop sign example, and now modify our car to stop moving if the camera sees a stop sign.

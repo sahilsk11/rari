@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
 <html lang='en'>
 	<head>
+		<title>Rari Docs - Get Started</title>
 		<link href="https://fonts.googleapis.com/css?family=Lora|Oleo+Script" rel="stylesheet">
 		<link href="landing-elements/css/organize.css" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<script>
 			var multiSelectState = {"java":false, "python": false, "js": false, "others": false, "autonimity": false, "ml":false, "ai": false, "neural-networks":false};
@@ -22,7 +25,12 @@
 				document.getElementById("not-much").style.backgroundColor = "red";
 				document.getElementById("decent-amount").style.backgroundColor = "red";
 				document.getElementById("advanced").style.backgroundColor = "red";
-				document.getElementById(id).style.backgroundColor = "green";
+				if (id != selectedKnowledge) {
+					document.getElementById(id).style.backgroundColor = "green";
+					selectedKnowledge = id;
+				} else {
+					selectedKnowledge = "";
+				}
 
 			}
 
