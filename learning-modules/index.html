@@ -1,3 +1,96 @@
-<script>
-	window.location.href="docusaurus/website/build/doc-website/docs/";
-</script>
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Lora|Oleo+Script" rel="stylesheet">
+		<link href="landing-elements/css/organize.css" rel="stylesheet">
+
+		<script>
+			var multiSelectState = {"java":false, "python": false, "js": false, "others": false, "autonimity": false, "ml":false, "ai": false, "neural-networks":false};
+			var selectedKnowledge;
+			function selectButton(id) {
+				var color;
+				if (multiSelectState[id]) {
+					color = "red";
+				} else {
+					color = "green";
+				}
+				multiSelectState[id] = !multiSelectState[id];
+				document.getElementById(id).style.backgroundColor = color;
+			}
+
+			function knowledgeSelect(id) {
+				document.getElementById("not-much").style.backgroundColor = "red";
+				document.getElementById("decent-amount").style.backgroundColor = "red";
+				document.getElementById("advanced").style.backgroundColor = "red";
+				document.getElementById(id).style.backgroundColor = "green";
+
+			}
+
+			function start() {
+				window.location.href="docusaurus/website/build/doc-website/docs/welcome/"
+			}
+		</script>
+	</head>
+
+	<body class='no-margin'>
+		<div class='nav'>
+			<h3 class='nav-title'>rari docs</h3>
+		</div>
+		<div class="starting-question">
+			<h1 class='center-description'>How much programming experience do you have?</h1>
+			<div class="btn-container">
+				<span class="btn-elements">
+					<button onclick="knowledgeSelect('not-much')" id="not-much" class='theme-btn'>Not Much</button>
+					<p> less than 1 year</p>
+				</span>
+				<span class="btn-elements">
+					<button onclick="knowledgeSelect('decent-amount')" id="decent-amount"  class='theme-btn'>Decent Amount</button>
+					<p>about a year; AP CS</p>
+				</span>
+				<span class="btn-elements">
+					<button onclick="knowledgeSelect('advanced')" id="advanced"  class='theme-btn'>Advanced</button>
+					<p>side projects</p>
+				</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-container">
+			<h1 class='center-description'>What languages do you know?</h1>
+			<div class="btn-container">
+				<span class="btn-elements">
+					<button id='java' onclick='selectButton("java")' class='theme-btn'>Java</button>
+				</span>
+				<span class="btn-elements">
+					<button id='python' onclick='selectButton("python")' class='theme-btn'>Python</button>
+				</span>
+				<span class="btn-elements">
+					<button id='js' onclick='selectButton("js")' class='theme-btn'>Javascript</button>
+				</span>
+				<span class="btn-elements">
+					<button id='other' onclick='selectButton("other")' class='theme-btn'>Others</button>
+				</span>
+			</div>
+		</div>
+		<hr>
+		<div class="form-container">
+			<h1 class='center-description'>Which of these terms are you familiar with (could explain to another student)?</h1>
+			<div class="btn-container">
+				<span class="btn-elements">
+					<button id='autonimity' onclick='selectButton("autonimity")' class='theme-btn'>Autonomity</button>
+				</span>
+				<span class="btn-elements">
+					<button id='ml' onclick='selectButton("ml")' class='theme-btn'>Machine Learning</button>
+				</span>
+				<span class="btn-elements">
+					<button id='ai' onclick='selectButton("ai")' class='theme-btn'>Artificial Intelligence</button>
+				</span>
+				<span class="btn-elements">
+					<button id='neural-networks' onclick='selectButton("neural-networks")' class='theme-btn'>Neural Networks</button>
+				</span>
+			</div>
+		</div>
+
+		<button class="submit-btn" onclick="start()">Submit</button>
+
+	</body>
+</html>	

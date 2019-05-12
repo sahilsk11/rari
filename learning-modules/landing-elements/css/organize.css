@@ -1,0 +1,106 @@
+.no-margin {
+	margin: 0px;
+}
+
+.nav {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background-color: black;
+	border-bottom: 100px;
+}
+
+.nav-title {
+	color: white;
+	font-family: 'Oleo Script';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.center-description {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.starting-question {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.form-container {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.theme-btn {
+	background-color: red;
+	border: none;
+	border-radius: 5px;
+	min-width: 150px;
+	width: auto;
+	min-height: 50px;
+	color: white;
+	font-size: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: 'Oleo Script';
+	font-style: normal;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.btn-container {
+	margin: 0px auto;
+	text-align: center;
+	width: 90%;
+}
+
+.btn-elements {
+	display: inline-block;
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+}
+
+.submit-btn {
+	text-align: center;
+	margin: 0px auto;
+	display: block;
+	height: 70px;
+	width: 200px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: none;
+	background-color: black;
+	border-radius: 10px;
+	color: white;
+	font-family: 'Oleo Script';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.theme-btn:hover {
+	background-color: rgba(200, 0, 0, 0.8);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.submit-btn:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.theme-btn:focus {
+    outline: none;
+}
+
+.submit-btn:focus {
+	outline: none;
+}
