@@ -1,7 +1,7 @@
 ---
 id: stage2
 title: Welcome to Stage 2!
-sidebar_label: Stage 2
+sidebar_label: Intro
 ---
 
 By now, you have a vehicle that moves until it sees an image of a stop sign, and automatically stops.

@@ -1,9 +1,12 @@
 {
-  "docs": {
-    "Introduction": ["welcome"],
-    "Stage 0": ["setup"],
-    "Stage 1": ["stage1intro","stage1part1","stage1part2","stage1part3","stage1finished"],
-    "Stage 2": ["stage2"]
+  "Introduction": {
+  	"Introduction":["welcome", "setup"]
+  },
+  "Stage 1": {
+  	"Stage 1":["stage1intro","stage1part1","stage1part2","stage1part3","stage1finished"]
+  },
+  "Stage 2": {
+  	"Stage 2":["stage2"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

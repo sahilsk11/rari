@@ -41,8 +41,7 @@ const siteConfig = {
     {doc: 'welcome', label: 'Get Started'},
     {doc: 'stage1intro', label: 'Stage 1'},
     {doc: 'stage2', label: 'Stage 2'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {page: 'help', label: 'Help'}
   ],
 
   // If you have users set above, you add it here:
@@ -55,8 +54,8 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#000000',
-    secondaryColor: '#FB0006',
+    primaryColor: '#af1616',
+    secondaryColor: '#6b0707',
   },
 
   /* Custom fonts for website */
