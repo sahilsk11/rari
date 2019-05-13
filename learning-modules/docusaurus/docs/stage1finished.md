@@ -9,3 +9,5 @@ Nice work! You've already completed 1/5 of the Rari project. You're now familiar
 The next modules will explore how to create your own machine-learning scripts to do image recognition. Get hype!
 
 ![ferrari](../../img/doc-images/stage-1/conclusion.gif)
+* * *
+### [Click here to start Stage 2!](../stage2)

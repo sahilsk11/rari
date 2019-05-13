@@ -1,6 +1,6 @@
 {
   "Introduction": {
-  	"Introduction":["welcome", "setup"]
+  	"Introduction":["welcome", "setup", "stage0finished"]
   },
   "Stage 1": {
   	"Stage 1":["stage1intro","stage1part1","stage1part2","stage1part3","stage1finished"]
