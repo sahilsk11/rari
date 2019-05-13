@@ -88,6 +88,18 @@
 	font-size: 30px;
 }
 
+.form-input {
+	display: block;
+	margin: 0px auto;
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	font-family: 'Lora';
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid black;
+}
+
 .theme-btn:hover {
 	background-color: rgba(200, 0, 0, 0.8);
 	color: rgba(255, 255, 255, 0.8);
@@ -102,5 +114,9 @@
 }
 
 .submit-btn:focus {
+	outline: none;
+}
+
+.form-input:focus {
 	outline: none;
 }

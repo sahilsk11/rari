@@ -49,15 +49,12 @@
 			<div class="btn-container">
 				<span class="btn-elements">
 					<button onclick="knowledgeSelect('not-much')" id="not-much" class='theme-btn'>Not Much</button>
-					<p> less than 1 year</p>
 				</span>
 				<span class="btn-elements">
 					<button onclick="knowledgeSelect('decent-amount')" id="decent-amount"  class='theme-btn'>Decent Amount</button>
-					<p>about a year; AP CS</p>
 				</span>
 				<span class="btn-elements">
 					<button onclick="knowledgeSelect('advanced')" id="advanced"  class='theme-btn'>Advanced</button>
-					<p>side projects</p>
 				</span>
 			</div>
 		</div>
@@ -81,7 +78,8 @@
 		</div>
 		<hr>
 		<div class="form-container">
-			<h1 class='center-description'>Which of these terms are you familiar with (could explain to another student)?</h1>
+			<h1 class='center-description'>Which of these terms are you familiar with</h1>
+			<h3 class='center-description'>Could you explain these to another student?</h3>
 			<div class="btn-container">
 				<span class="btn-elements">
 					<button id='autonimity' onclick='selectButton("autonimity")' class='theme-btn'>Autonomity</button>
@@ -97,7 +95,11 @@
 				</span>
 			</div>
 		</div>
+		<hr>
 
+		<div clas="form-container">
+			<h1 class='center-description'>What's your first name?</h1>
+			<input class='form-input' id='name'>
 		<button class="submit-btn" onclick="start()">Submit</button>
 
 	</body>

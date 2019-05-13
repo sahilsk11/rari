@@ -7,6 +7,7 @@ sidebar_label: Recognizing Llamas
 ## Background
 Using the newly attached camera on your car, you are now able to capture still images. Modern image recognition uses machine-learning to parse images, but it's too complicated to write these algorithms on our own yet. Instead, we're going to use a pre-made Google algorithm to parse the images for us.
 
+Unfortunately, this is one of the longest modules of the project, but simply because we tried to simplify everything as much as possible. We recommend doing one part at a time!
 
 # Parsing Llama Pics
 
@@ -16,40 +17,65 @@ For this module, we're going to be working with our new friend, Ben.
 
 The very first algorithms we will create will be to recognize whether a given image contains a llama or not. Once we do this, we can apply the same code to detect objects like stop signs!
 
-## Step 0: What to Know
+## Step 1: HTML Requests and APIs
 
-There are some key components I am going to assume you're familiar with:
-1. [Using REST APIs](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
-2. [JSON notation](https://www.w3schools.com/whatis/whatis_json.asp)
-3. The difference between a llama and a stop sign
+#### Note: APIs are among the most important topics in computer science today! Understanding them can help tremendously in securing an internship earlier!
 
-If any of these feel unfamiliar, click on them to read more.
+Browsers and programs are always communicating information with each other. For example, your browser sent a request to Rari servers to pull this article and display it on your computer.
 
-## Step 1: Sending Requests
+These interactions (between servers and websites) are done through *HTML requests*. Basically, the computer sends a request to a server, and the server responds with data.
 
-To access Google's Vision API, we are going to use Python's requests library. This makes it very simple to access API's efficiently. Check it out:
+We can use HTML requests to gain access to all kinds of data, beyond just web pages. To do this, we often take advantage of APIs, or application programming interfaces. Think of an API as a robot that is the bridge between you and the server. It is the API's job to simplify the data returned by the server into a format we can use.
 
-`r = requests.get("test_url.projectcarbon.io", json=test_json)`
+For example, we can send an HTML request to an online weather API, and that API will respond with weather!
 
-where `test_url` is the site for the API we are calling and `test_json` is a predefined JSON object with some arguments. Think of this like a method call: the URL specifies the method to run, and the arguments are the parameters. The `requests.get` runs the function that pulls the response from the server and stores it in the variable `r`.
+#### Note: don't get lost in terminology! Some of these terms may sound confusing, but will get cleared up as soon as you start using them!
 
-Once this feels familiar, open up the starter code.
+![api](../../img/doc-images/stage-1/api.png)
 
-Start with line 8. Here, we are specifying the path to the image we want our API to parse.
+In the APIs we will use, the format the data is returned in is called JSON (javascript object notation). Again, don't worry about terminology! Just know that JSON is a format that we can easily write programs to decode.
 
-Take a look at line 38:
+##### Remember JSON! Once again, this is one of key topics in modern computer science.
 
-`r = requests.post("https://vision.googleapis.com/v1/images:annotate?key=" + key, json=payload)`
+If this is still unclear, check out some of our other resources on APIs. If you kinda get the idea, keep going! This stuff is much easier understood once you do it.
 
-Look familiar?
 
-This line accesses the API and passes the JSON object above. Don't worry too much about the syntax of the JSON object - just make sure you are comfortable with the idea that you can pass certain arguments to the API by specifying parameters in the JSON object.
+## Step 2: Using Python's Request Library
 
-Once that feels good, hit run. Congratulations! You just made your first call to the Google Vision API
+Python has a library that makes HTML requests super easy. To make a request to an API, we can write:
 
-## Step 2: Parsing Responses
+`r = requests.get("sample.com")`
 
-If everything worked correctly, the program should have printed a JSON object. This is the response from the server. I've printed a simplified version here:
+When we do this, the response from the API is stored in the variable `r` which we can easily decode.
+
+### To-do: Try out Python's request library
+
+Open `sample_request.py` from the starter code. Click run.
+
+It will print some data about a user in JSON format. It's that simple!
+
+## Step 3: Using Google Vision API
+
+Google has a public API where they allow anyone to send a picture, and they will respond with the objects found in the picture. This API is called the Google Vision API.
+
+Remember our friend Ben from the beginning of the module? We are going to use the picture of him as a sample. 
+
+### To-do: Upload the image of Ben to the Google Vision API
+
+Open up `finding_llamas.py` from the starter code.
+
+This is a pretty long program, but at it's core, it is simply and API call. Let's break this down.
+
+On line 23, we see a large chunk of code. This defines some parameters that the Google Vision API needs to work. Don't worry about this now!
+
+On line 27 we see the core of the program. This makes the request to the Google server, and it responds with data about the image we uploaded.
+
+If you try running the program, you can see it prints some JSON data about what the Google API found.
+
+
+## Step 4: Parsing Responses
+
+If everything worked correctly, the program should have printed the following:
 
 ```
 {'responses': [{'labelAnnotations': [{
@@ -64,38 +90,30 @@ If everything worked correctly, the program should have printed a JSON object. T
     'topicality': 0.98694533,
     }]}]}
 ```
-It printed a dict with a key "responses" that contains an array that contains a dict... that contains an array...
 
-Yeah, that's a pretty long object. Fortunately, it's easy enough to look at it and figure out what it's telling us. We can see that the program returned two labels: one with description "Mammal" with an accuracy of 0.989, and one with description "Llama" with accuracy 0.986. If you want to see more results, try changing "maxResults" in the JSON arguments on line 31.
+Parsing JSON objects in Python is extremely simple. However, since it isn't important to the course, we leave it up to you to learn. For now, we give you the method to pull the objects from the JSON object.
 
-Now, we want to parse the results into an array to see what the API found in a clean way.
+Uncomment line 23 to try it.
 
-### To-Do: Write a for loop that adds all the descriptions into an array
-Hint: 
-`labels = response["responses"][0]["labelAnnotations"]`
+##### Note: to change the number of objects recognized, change the `max_results` variable on line 11.
 
-Will add the array contained in `labelAnnotations` to an array called labels. Now, write a for loop that can traverse `labels` and pull the descriptions.
 
-### Solution
+## To-Do: Write a script that will determine if the image has a llama
 
-```
-labels = json_response["responses"][0]["labelAnnotations"]
-descriptions = []
-for individual_description in labels:
-    descriptions.append(individual_description["description"])
-print(descriptions)
-```
+Now that we have all of the recognized objects in an array, write a for loop that will iterate through all of the labels and determine if the image contains a llama.
 
-Now that we have all of the descriptions in an array, we can create another for loop that traverses our descriptions array and searches for different objects.
-
-### To-Do: Write another for loop that searches the descriptions array for the word "llama" (case insensitive)
-hint: use the `.lower()` method to convert a string to lowercase.
+#### Hint: find out if the word "llama" is in the list called `responses`
 
 ### Solution
 
 ```
-for tag in labels:
-    if tag.lower() == "llama":
+for i in range(0, len(responses))
+    if responses[i] == "llama":
         print("We found Ben")
 ```
 
+Phew, that was a long module. But now, you are capable of using APIs and requests to find data, and can utilize the Google Vision API to determine a list of objects found in an image. 
+
+This is a tricky module! If any of it is confusing, reach out. It gets easier from here (sorta)!
+
+Onwards!
