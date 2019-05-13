@@ -41,7 +41,11 @@ Plus, we are always here to answer questions or guide you when you need it.
 
 ## Tips and Tricks
 
-### 1. How to view Rari Docs
+### 1. READ EVERYTHING CLOSELY
+
+This is the easiest step to follow that will save you hours of debugging. Read all directions in order and read them carefully! Rari Docs are designed to be as straightforward as possible, but if you skip around, it will become much harder.
+ 
+### 2. How to view Rari Docs
 
 The recommended view is to have half your screen on the docs page and have open on your code editor, like this:
 
@@ -49,12 +53,16 @@ The recommended view is to have half your screen on the docs page and have open 
 
 It doesn't have to be exactly like this, but some combination where you can see both screens at once is recommended.
 
-### 2. If you're stuck, that's good.
+### 3. If you're stuck, that's good.
 
 Contrary to popular belief, being stuck is where you learn the most. What sets good programmers apart is not that they are "smarter" but that they are less willing to give up when they encounter a problem. Use your resources (such as the internet or the Rari team) and find the solution! Finding answers to hard problems on your own builds the most skill.
 
 Of course, if you are truly stuck, reach out. We're here to help.
 
-### 3. NEVER feel forced to work on Rari
+### 4. NEVER feel forced to work on Rari
 
 If you ever feel that you are being forced to work on the project, stop right away. The goal of this project is for you to explore the fun and creative applications of computer science. That magic is torn away when you feel that you HAVE TO do it. We want you to love the work that you do!
+
+### 5. Meet other Rari Developers!
+
+Everyone working on Rari is working on the same issues. Meet others who can help you out!
