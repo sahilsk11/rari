@@ -104,6 +104,7 @@
 .description-container {
 	padding-top: 30vh;
 	margin: 0px auto;
+	margin-bottom: 0px;
 	display: block;
 	text-align: center;
 	max-width: 800px;
@@ -282,6 +283,9 @@ a {
 	.type-section {
 		background-size: 90%;
 		height: 50vh;
+	}
+	.intro-description {
+		margin-bottom: 20px;
 	}
 	.v1-section {
 		background-size: 110%;
