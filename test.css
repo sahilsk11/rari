@@ -1,0 +1,59 @@
+.parallelogram {
+    width: 200vh;
+    height: 300px;
+    transform: skew(30deg);
+    background: #555;
+    transform: rotate(120deg) skew(30deg);
+    position: absolute;
+    right: -100vh;
+    background-color: #9B0417;
+}
+
+.heading {
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.heading-container {
+    padding-top: 40vh;
+    padding-left: 10%;
+}
+  
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 715px) {
+    .parallelogram {
+        background-color: rgb(155, 4, 23, 0.3);
+    }
+
+    .heading-container {
+        text-align: center;
+    }
+}
+
+.theme-btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: rgb(155, 4, 23);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.theme-btn:hover {
+    background-color: rgb(155, 4, 23, 0.8);
+}
+
+.theme-btn:focus {
+    outline: none;
+}

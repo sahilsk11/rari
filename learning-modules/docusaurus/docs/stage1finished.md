@@ -10,4 +10,5 @@ The next modules will explore how to create your own machine-learning scripts to
 
 ![ferrari](../../img/doc-images/stage-1/conclusion.gif)
 * * *
-### [Click here to start Stage 2!](../stage2)
+
+### [Click here to start Stage 2!](../stage2)                                             
