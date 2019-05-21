@@ -7,6 +7,7 @@
 <url> <loc>http://rari.projectcarbon.io./../../blog/2017/09/25/testing-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://rari.projectcarbon.io./../../blog/2017/04/10/blog-post-two</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>http://rari.projectcarbon.io./../../blog/2016/03/11/blog-post</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>http://rari.projectcarbon.io./../../docs/background</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/background" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/doc1</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/doc1" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/doc2</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/doc2" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/doc3</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/doc3" /> </url>
@@ -20,5 +21,6 @@
 <url> <loc>http://rari.projectcarbon.io./../../docs/stage1part2</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/stage1part2" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/stage1part3</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/stage1part3" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/stage2</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/stage2" /> </url>
+<url> <loc>http://rari.projectcarbon.io./../../docs/tips</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/tips" /> </url>
 <url> <loc>http://rari.projectcarbon.io./../../docs/welcome</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="http://rari.projectcarbon.io./../../docs/welcome" /> </url>
 </urlset>
