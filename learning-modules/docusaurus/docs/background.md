@@ -1,7 +1,7 @@
 ---
 id: background
 title: Background
-sidebar_label: Background
+sidebar_label: Background (optional)
 ---
 ## Why Rari?
 
