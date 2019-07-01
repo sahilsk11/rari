@@ -1,24 +1,75 @@
-import image_processing.vision_api as vision
-#import vehicle_control.esc as esc
+#!/usr/bin/python
 
-# Movement variable defines the direction of the vehicle
-#   1 means forward
-#   0 means stop
-movement = 1
+from PCA9685 import PCA9685
+import time
 
-# Stop detected signals if a stop sign is seen anywhere in the frame
-stop_detected = vision.is_stop_sign("images/stopsign.txt")
+Dir = [
+    'forward',
+    'backward',
+]
+pwm = PCA9685(0x40, debug=False)
+pwm.setPWMFreq(50)
 
-while True:
-    try:
-        if stop_detected:
-            movement = 0
+class MotorDriver():
+    def __init__(self):
+        self.PWMA = 0
+        self.AIN1 = 1
+        self.AIN2 = 2
+        self.PWMB = 5
+        self.BIN1 = 3
+        self.BIN2 = 4
+
+    def MotorRun(self, motor, index, speed):
+        if speed > 100:
+            return
+        if(motor == 0):
+            pwm.setDutycycle(self.PWMA, speed)
+            if(index == Dir[0]):
+                pwm.setLevel(self.AIN1, 0)
+                pwm.setLevel(self.AIN2, 1)
+            else:
+                pwm.setLevel(self.AIN1, 1)
+                pwm.setLevel(self.AIN2, 0)
         else:
-            movement = 1
-        if movement == 1:
-            print("moving forward")
+            pwm.setDutycycle(self.PWMB, speed)
+            if(index == Dir[0]):
+                pwm.setLevel(self.BIN1, 0)
+                pwm.setLevel(self.BIN2, 1)
+            else:
+                pwm.setLevel(self.BIN1, 1)
+                pwm.setLevel(self.BIN2, 0)
+
+    def stop(self, motor='movement'):
+        if (motor == 'steering'):
+            motor = 1
+        elif (motor == 'movement'):
+            motor = 0
+        if (motor == 0):
+            pwm.setDutycycle(self.PWMA, 0)
         else:
-            print("stopped")
-        stop_detected = vision.is_stop_sign("images/stopsign.txt")
-    except KeyboardInterrupt:
-        exit(0)
+            pwm.setDutycycle(self.PWMB, 0)
+
+    def turn(self, direction, speed=100):
+        if (direction == 'left'):
+            direction = 'forward'
+        else:
+            direction = 'backward'
+        self.MotorRun(1, direction, speed)
+
+    def move(self, direction, speed=100):
+        self.MotorRun(0, direction, speed)
+
+    def terminate(self):
+        self.stop(0)
+        self.stop(1)
+
+if (__name__ == "__main__"):
+    rari = MotorDriver()
+    rari.move('forward', 50)
+    rari.stop()
+    time.sleep(1)
+    rari.turn('left')
+    time.sleep(1)
+    rari.turn('right')
+    time.sleep(1)
+    rari.terminate()
